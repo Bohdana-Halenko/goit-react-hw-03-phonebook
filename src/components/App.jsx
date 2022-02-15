@@ -16,6 +16,10 @@ class App extends Component {
     filter: ''
   };
 
+  // Xранение контактов телефонной книги в localStorage
+
+
+  
   addContacts = data => { 
     const { contacts } = this.state;
     const names = contacts.map(contact => contact.name.toLowerCase());
