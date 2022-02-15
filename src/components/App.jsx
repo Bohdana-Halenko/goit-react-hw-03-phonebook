@@ -17,9 +17,11 @@ class App extends Component {
   };
 
   // Xранение контактов телефонной книги в localStorage
+  // componentDidUpdate(prevState, prevProps) {
+  //   if(this.state.contacts !== prevState.contacts){}
+  // }
 
 
-  
   addContacts = data => { 
     const { contacts } = this.state;
     const names = contacts.map(contact => contact.name.toLowerCase());
